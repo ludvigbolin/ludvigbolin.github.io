@@ -1,7 +1,61 @@
 * {
 }
+
 html {
   font-size: 13px;
   font-family: monospace;
   background-color: #fffbf1;
+}
+
+.square {
+  float: left;
+  position: relative;
+  width: 1%;
+  padding-bottom: 1%;
+  background-color: #1e1e1e;
+  overflow: hidden;
+  outline: 1px solid grey;
+}
+
+/*
+Aspect ratio  |  padding-bottom  |  for 30% width
+------------------------------------------------
+  1:1        |  = width         |    30%
+  1:2        |  width x 2       |    60%
+  2:1        |  width x 0.5     |    15%
+  4:3        |  width x 0.75    |    22.5%
+  16:9       |  width x 0.5625  |    16.875%
+  */
+
+.content {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  padding: 5% 5%;
+  text-align: center;
+}
+
+.content .rs {
+  width: auto;
+  height: auto;
+  max-height: 90%;
+  max-width: 100%;
+}
+
+.table {
+  display: table;
+  height: 10%;
+  width: 10%;
+}
+
+.table-cell {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+  width: 100%;
+}
+
+.parent {
+  margin: 10px;
+  width: 1000px;
 }
