@@ -10,9 +10,14 @@
     <h1>Ludvig Bolin</h1>
     <h2>About me</h2>
     <p>Resumé link can be found here: <a href="/resume.pdf", type="button">resume</a>.</p>
-    <h2>header 2</h2>
+    <h2>random point generator</h2>
+    <canvas id="myCanvas" width="500" height="500" style="border:1px solid #000000;" onmousedown="drawOnClick(event)">
+    </canvas>
+    <div>
+        <button onclick="clearCanvas(document.querySelector('#myCanvas'))" class="button1">reset</button>
+        <button onclick="randomPoints(40)" class="button1">random points</button>
+    </div>
     
-    <div id="par", class="parent"></div>
     <script src="app.js"></script>
 </body>
 </html>
